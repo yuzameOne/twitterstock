@@ -24,7 +24,7 @@ let scrape = async () => {
 
         await page.waitFor(1000)
 
-    let  getDataTable = await page.evaluate(()=>{
+    let getDataTable = await page.evaluate(()=>{
      
       let tbody = document.querySelectorAll("tbody")
 
@@ -43,12 +43,7 @@ let scrape = async () => {
        }       
     })
 
-    return {getDataTable}
-    //  console.log(getDataTable.row1[0], getDataTable.row1[1],getDataTable.row1[2],getDataTable.row1[3])
+    return Promise.resolve(getDataTable)
   }; 
-
-scrape().then((value)=> {
-  console.log(value)
-})
 
 module.exports = scrape
