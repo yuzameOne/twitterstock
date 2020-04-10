@@ -45,7 +45,6 @@ let scrape = async () => {
 
      return Promise.resolve(getDataTable)
     
-   await browser.close();
   }; 
 
  
