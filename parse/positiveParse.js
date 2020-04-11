@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer');
 
 let scrape = async () => {
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch( );
     const page = await browser.newPage();
     await page.setViewport({
         width: 1000,

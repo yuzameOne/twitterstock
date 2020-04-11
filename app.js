@@ -62,37 +62,3 @@ tik: ${postPositiveString.row5[0]}, open: ${postPositiveString.row5[4]}, close: 
 }
 
 signIn()
-
-
-// negativeParse()
-//       .then((value)=>{
-//         console.log(`tik: ${value.row1[0]}, open: ${value.row1[4]}, close: ${value.row1[2]}, per: ${value.row1[3]}% `)
-//         return  positiveParse()
-//       })
-//       .then((value)=>{
-//         console.log(`tik: ${value.row1[0]}, open: ${value.row1[4]}, close: ${value.row1[2]}, per: +${value.row1[3]}% `)
-//         return signIn()
-//       })
-// Promise.all([negativeParse,positiveParse,signIn()])
-
-// negativeParse().then(
-//     (result)=>{
-        
-//         console.log(`tik: ${result.row1[0]}, open: ${result.row1[4]}, close: ${result.row1[2]}, per: ${result.row1[3]}% `)
-//         console.log(`tik: ${result.row2[0]}, open: ${result.row2[4]}, close: ${result.row2[2]}, per: ${result.row2[3]}% `)
-//         console.log(`tik: ${result.row3[0]}, open: ${result.row3[4]}, close: ${result.row3[2]}, per: ${result.row3[3]}% `)
-//         console.log(`tik: ${result.row4[0]}, open: ${result.row4[4]}, close: ${result.row4[2]}, per: ${result.row4[3]}% `)
-//         console.log(`tik: ${result.row5[0]}, open: ${result.row5[4]}, close: ${result.row5[2]}, per: ${result.row5[3]}% `)
-       
-//     }
-// )
-
-// positiveParse().then(
-//     (result)=>{
-//         console.log(`tik: ${result.row1[0]}, open: ${result.row1[4]}, close: ${result.row1[2]}, per: +${result.row1[3]}% `)
-//         console.log(`tik: ${result.row2[0]}, open: ${result.row2[4]}, close: ${result.row2[2]}, per: +${result.row2[3]}% `)
-//         console.log(`tik: ${result.row3[0]}, open: ${result.row3[4]}, close: ${result.row3[2]}, per: +${result.row3[3]}% `)
-//         console.log(`tik: ${result.row4[0]}, open: ${result.row4[4]}, close: ${result.row4[2]}, per: +${result.row4[3]}% `)
-//         console.log(`tik: ${result.row5[0]}, open: ${result.row5[4]}, close: ${result.row5[2]}, per: +${result.row5[3]}% `)
-//     }
-// )
