@@ -6,7 +6,7 @@ const positiveParse = require('./parse/positiveParse')
 let work = new CronJob('0 19 * * 1-5',async function(){
    
 
-    let pwd ='xxxxxxx'
+    let pwd ='Fmb384qj7da'
 
 let signIn = async () =>{
     const browser = await puppeteer.launch(/*{headless: false}*/);
