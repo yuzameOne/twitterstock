@@ -3,6 +3,9 @@ const puppeteer = require('puppeteer');
 const negativeParse = require('./parse/negativeParse');
 const positiveParse = require('./parse/positiveParse')
 
+
+process.env.PORT = 3000;
+
 let work = new CronJob('0 19 * * 1-5',async function(){
    
 
