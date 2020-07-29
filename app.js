@@ -12,7 +12,7 @@ http.createServer(function(req,res){
     let work = new CronJob('0 19 * * 1-5',async function(){
    
 
-        let pwd ='Fmb384qj7da'
+        let pwd ='xxxxx'
     
     let signIn = async () =>{
         const browser = await puppeteer.launch(/*{headless: false}*/);
