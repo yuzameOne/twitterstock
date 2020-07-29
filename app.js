@@ -1,17 +1,21 @@
+const CronJob = require('cron').CronJob;
 const puppeteer = require('puppeteer');
-const negativeParse = require("./parse/negativeParse");
-const positiveParse = require("./parse/positiveParse");
+const negativeParse = require('./parse/negativeParse');
+const positiveParse = require('./parse/positiveParse')
 
-let pwd ='xxxxx'
+let work = new CronJob('0 19 * * 1-5',async function(){
+   
+
+    let pwd ='xxxxxxx'
 
 let signIn = async () =>{
-    const browser = await puppeteer.launch({headless: false});
+    const browser = await puppeteer.launch(/*{headless: false}*/);
     const page = await browser.newPage();
     
-    await page.setViewport({
+    /*await page.setViewport({
         width: 1000,
         height: 800,
-      });
+      });*/
             
       await page.goto("https://twitter.com/home",{waitUntil: 'domcontentloaded'}) 
       
@@ -59,6 +63,17 @@ tik: ${postPositiveString.row5[0]}, open: ${postPositiveString.row5[4]}, close: 
           await page.click('[data-testid="tweetButtonInline"]')
           
           
+          await page.waitFor(2000)
+          
+          browser.close()
+          
 }
 
 signIn()
+
+}, 
+    null,
+        true,
+            'Europe/Moscow')
+
+work.start();

@@ -1,26 +1,19 @@
 {
-  "name": "project",
+  "name": "new",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "dev": "nodemon app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yuzameOne/twitterstock.git"
-  },
   "keywords": [],
-  "author": "Evgenii Khomaiko",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/yuzameOne/twitterstock/issues"
-  },
-  "homepage": "https://github.com/yuzameOne/twitterstock#readme",
   "dependencies": {
+    "cron": "^1.8.2",
     "puppeteer": "^2.1.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.3"
   }
 }
