@@ -3,10 +3,6 @@ const puppeteer = require('puppeteer');
 const negativeParse = require('./parse/negativeParse');
 const positiveParse = require('./parse/positiveParse')
 const http = require("http");
-const PORT = process.env.PORT || 5000;
-
-
-http.createServer(function(req,res){
 
 
     let work = new CronJob('0 19 * * 1-5',async function(){
@@ -84,4 +80,3 @@ http.createServer(function(req,res){
     
     work.start();
     
-}).listen(PORT);
